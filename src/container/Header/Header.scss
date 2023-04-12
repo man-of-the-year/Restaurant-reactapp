@@ -1,0 +1,43 @@
+.app__header {
+  background: var(--color-black);
+  
+  & h1 {
+    font-family: var(--font-base);
+    color: var(--color-golden);
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    line-height: 117px;
+    font-size: 90px;
+  }
+
+  &-img {
+
+    & img {
+      width: 80%;
+    }
+  }
+}
+
+@media screen and (width<740px) {
+  .app__header {
+
+    & h1 {
+      font-size: 64px;
+      line-height: 55px;
+    }
+  }
+}
+
+@media screen and (width<540px) {
+  .app__header {
+
+    & h1 {
+      font-size: 44px;
+      line-height: 39px;
+    }
+
+    & p {
+      line-height: 25px;
+    }
+  }
+}
